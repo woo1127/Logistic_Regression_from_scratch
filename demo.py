@@ -1,14 +1,10 @@
-from logistic_regression import LogisticRegression
+from sklearn.datasets import load_breast_cancer
 import pandas as pd
 
-data = pd.read_csv('breast_cancer.csv')
-data = data.drop(['id'], axis=1)
+data = load_breast_cancer()
+print(data.keys())
 
-X = df.iloc[:, 1:]
-print(X.columns)
-
-y = df['diagnosis']
-print(y)
+X, y = data['data'], data['target']
 
 model = LogisticRegression()
 model.fit(X, y)
