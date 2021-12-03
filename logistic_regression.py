@@ -1,7 +1,7 @@
 import numpy
 import warnings
 
-class Logistics:
+class LogisticRegression:
     warnings.filterwarnings('ignore')
     
     def __init__(self, alpha=0.001, iteration=20000, split_ratio=0.75):
