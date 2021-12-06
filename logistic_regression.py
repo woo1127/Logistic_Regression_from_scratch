@@ -17,7 +17,7 @@ class LogisticRegression:
         
         
     def fit(self, X, y):
-        self.X = np.insert(np.array(X), 0, 0, axis=1)
+        self.X = np.insert(np.array(X), 0, 1, axis=1)
         self.y = np.array(y)
         self.X_train, self.y_train, self.X_test, self.y_test = self.train_test_split(self.X, self.y)
         
