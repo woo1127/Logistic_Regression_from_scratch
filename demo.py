@@ -1,4 +1,5 @@
 from sklearn.datasets import load_breast_cancer
+from logistic_regression import LogisticRegression
 import pandas as pd
 
 data = load_breast_cancer()
