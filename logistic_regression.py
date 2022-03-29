@@ -11,6 +11,7 @@ class LogisticRegression:
     
     
     def _train_test_split(self, X, y):
+        np.random.seed(42)
         mask = np.random.rand(len(self.X)) < self.ratio
         
         return self.X[mask], self.y[mask], self.X[~mask], self.y[~mask]
