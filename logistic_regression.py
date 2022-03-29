@@ -41,7 +41,7 @@ class LogisticRegression:
         return self.y_pred
         
         
-    def accurate(self):
+    def accuracy(self):
         compare = self.y_pred == self.y_test
         
         return len([i for i in compare if i == True]) / len(self.X_test) * 100
