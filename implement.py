@@ -11,4 +11,4 @@ model = LogisticRegression()
 model.fit(X, y)
 
 print(model.predict())
-print(model.accurate())
+print(model.accuracy())
